@@ -117,6 +117,7 @@ class SubscriptionDiv extends StatelessWidget {
             ],
           ),
           GridView.builder(
+            physics: NeverScrollableScrollPhysics(),
             itemCount: subscription.length,
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(

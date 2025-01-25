@@ -41,6 +41,7 @@ class OurServiceDiv extends StatelessWidget {
             ),
           ),
           GridView.builder(
+            physics: NeverScrollableScrollPhysics(),
             itemCount: ourServices.length,
             shrinkWrap: true,
             gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(

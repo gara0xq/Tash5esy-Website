@@ -65,6 +65,7 @@ class WhyUsDiv extends StatelessWidget {
               ),
             ),
             GridView.builder(
+              physics: NeverScrollableScrollPhysics(),
               itemCount: whyUs.length,
               shrinkWrap: true,
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
