@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:tash5esy_website/controller/home_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 import 'package:tash5esy_website/view/screens/home_divs/home_div.dart';
+import 'package:tash5esy_website/view/screens/home_divs/our_service_div.dart';
 import 'package:tash5esy_website/view/widgets/custom_appbar.dart';
 
 class MainScreen extends StatelessWidget {
@@ -10,7 +11,8 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.of(context).size.width;
+    // double width = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: Color(0xffF7FCFD),
       body: GetBuilder<HomeController>(
@@ -90,11 +92,7 @@ class MainScreen extends StatelessWidget {
                       ),
                     ),
                     HomeDiv(),
-                    Container(
-                      height: 850,
-                      constraints: BoxConstraints(maxWidth: 1400),
-                      color: Colors.grey.shade300,
-                    ),
+                    OurServiceDiv(),
                     Container(
                       height: 850,
                       color: Color(0xffCF7D4E).withOpacity(0.05),

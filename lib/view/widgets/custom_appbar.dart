@@ -125,9 +125,7 @@ Widget _customTap({
   required String title,
 }) {
   return InkWell(
-    onTap: () {
-      return null;
-    },
+    onTap: () {},
     radius: 12,
     hoverColor: foriegnColor,
     child: Container(
