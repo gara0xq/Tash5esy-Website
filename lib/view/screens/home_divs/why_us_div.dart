@@ -57,7 +57,7 @@ class WhyUsDiv extends StatelessWidget {
           spacing: 80,
           children: [
             Text(
-              "Our Services",
+              "Why Us",
               style: TextStyle(
                 color: primaryColor,
                 fontSize: 46,
