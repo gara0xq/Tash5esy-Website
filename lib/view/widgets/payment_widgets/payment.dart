@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/controller/payment_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
@@ -44,8 +45,8 @@ class Payment extends StatelessWidget {
               borderRadius: BorderRadius.circular(7),
               color: foriegnColor,
             ),
-            child: const Text(
-              "Pay Now",
+            child:  Text(
+              "pay_now".tr,
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,

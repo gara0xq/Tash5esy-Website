@@ -42,5 +42,79 @@
     "sub_text3": "Choose from a range of packages designed for different operations, user numbers, and data requirements.",
     "sub_text4": "Transparent and competitive subscription plans designed to suit every budget.",
     "sub_text5": "Upgrade or downgrade your subscription anytime as your organization grows or changes.",
-    "sub_text6": "Stay worry-free with 24/7 technical support and regular updates to keep your system running smoothly."
+    "sub_text6": "Stay worry-free with 24/7 technical support and regular updates to keep your system running smoothly.",
+    "Subscribe Now": "Subscribe Now",
+
+
+    "choose_your_plan": "Choose Your Plan",
+    "yearly": "Yearly (Save 2.5%)",
+    "monthly": "Monthly",
+    "best_plans": "Best Plans For HealthCare Management",
+
+    "currency": "EGP / MONTH",
+    "enterprise_full_patient_record_management": "Full Patient Record Management",
+    "enterprise_appointment_scheduling": "Appointment Scheduling",
+    "enterprise_comprehensive_analytics": "Comprehensive Analytics",
+    "enterprise_secure_storage": "Secure Storage (1 TB)",
+    "enterprise_advanced_marketing_tools": "Advanced Marketing Tools",
+    "enterprise_custom_integrations": "Custom Integrations",
+    "enterprise_operation_team_support": "Operation Team Support",
+    "enterprise_unlimited_users": "Unlimited Users",
+    "choose_plan": "Choose Plan",
+
+    
+    "professional_patient_record_management": "Patient Record Management",
+    "professional_appointment_scheduling": "Appointment Scheduling",
+    "professional_advanced_analytics": "Advanced Analytics",
+    "professional_secure_storage": "Secure Storage (200 GB)",
+    "professional_social_media_integration": "Social Media Integration",
+    "professional_priority_technical_support": "Priority Technical Support",
+    "professional_operation_team_support": "Operation Team Support",
+    "professional_unlimited_users": "Unlimited Users",
+
+    
+    "economic_patient_record_management": "Patient Record Management",
+    "economic_appointment_scheduling": "Appointment Scheduling",
+    "economic_basic_analytics": "Basic Analytics",
+    "economic_secure_storage": "Secure Storage (50 GB)",
+    "economic_advanced_marketing_tools": "Advanced Marketing Tools",
+    "economic_multi_department_support": "Multi-Department Support",
+    "economic_operation_team_support": "Operation Team Support",
+    "economic_custom_integrations": "Custom Integrations",
+
+
+    "create_account": "Create an account",
+    "already_have_account": "Already have an account",
+    "first_name":"First Name",
+    "last_name": "Last Name",
+    "email": "Email Address",
+    "pass":"Password",
+    "confirm_pass":"Confirm Password",
+    "show_pass":"Show Password",
+
+
+    "login_to_account":"Login to your account",
+    "subslogan": "See what is going on with your business",
+    "continue_with_google": "Continue with Google",
+    "or_with_email": "or login with Email",
+    "forget": "Forget Password?",
+    "not_registered": "Not Registered Yet?",
+    "remmenber": "Remmember Me",
+
+    "summary": "Summary",
+    "payment": "Payment",
+    "confirmation": "Confirmation",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "enter_coupon": "Enter Coupon code",
+    "apply": "Apply",
+    "total": "Total",
+    "proceed" : "Proceed",
+
+    "pay_now": "Pay Now",
+    "pay_success": "Payment Successful",
+    "pay_success_text": "Your payment has been done successfully.",
+    "continue": "Continue",
+
+    "slogan": "\"Your health, your data, under control\""
 }

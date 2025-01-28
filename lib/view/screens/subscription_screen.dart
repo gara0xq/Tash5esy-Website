@@ -37,7 +37,7 @@ class SubscriptionScreen extends StatelessWidget {
               children: [
                 SizedBox(height: 20),
                 AutoSizeText(
-                  "Choose Your Plan",
+                  "choose_your_plan".tr,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: primaryColor,
@@ -65,7 +65,7 @@ class SubscriptionScreen extends StatelessWidget {
                               borderRadius: BorderRadius.circular(5),
                             ),
                             child: Text(
-                              "Monthly",
+                              "monthly".tr,
                               style: TextStyle(
                                 color: primaryColor,
                                 fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class SubscriptionScreen extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            "Yearly (Save 2.5%)",
+                            "yearly".tr,
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.grey),
                           ),
@@ -85,7 +85,7 @@ class SubscriptionScreen extends StatelessWidget {
                   ),
                 ),
                 AutoSizeText(
-                  "Best Plans For HealthCare Management",
+                  "best_plans".tr,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.grey.shade700,

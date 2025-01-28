@@ -66,9 +66,11 @@ class SubscriptionController extends GetxController {
   changeLang() {
     if (currentLang == Lang.EN) {
       window.localStorage["Lang"] = "AR";
+      Get.updateLocale(Locale('ar'));
       currentLang = Lang.AR;
     } else if (currentLang == Lang.AR) {
       window.localStorage["Lang"] = "EN";
+      Get.updateLocale(Locale('en'));
       currentLang = Lang.EN;
     }
     update();
@@ -77,7 +79,6 @@ class SubscriptionController extends GetxController {
   scrollController(GlobalKey key) {
     Get.back();
     Get.back();
-    
   }
 
   logout() {

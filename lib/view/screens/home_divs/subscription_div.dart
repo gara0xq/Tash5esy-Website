@@ -76,7 +76,9 @@ class SubscriptionDiv extends StatelessWidget {
                 ),
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Get.toNamed("/subscription");
+                },
                 hoverColor: Colors.transparent,
                 highlightColor: Colors.transparent,
                 splashColor: Colors.transparent,
@@ -93,7 +95,7 @@ class SubscriptionDiv extends StatelessWidget {
                     children: [
                       Expanded(
                         child: AutoSizeText(
-                          "Subscribe Now",
+                          "Subscribe Now".tr,
                           style: TextStyle(
                             fontSize: 18,
                             color: primaryColor,

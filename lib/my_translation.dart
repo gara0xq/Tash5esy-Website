@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
@@ -11,7 +10,6 @@ class MyTranslation extends Translations {
     final arJson = await rootBundle.loadString('assets/translation/ar.json');
     translations['en'] = Map<String, String>.from(json.decode(enJson));
     translations['ar'] = Map<String, String>.from(json.decode(arJson));
-    log(translations['ar'].toString());
   }
 
   @override

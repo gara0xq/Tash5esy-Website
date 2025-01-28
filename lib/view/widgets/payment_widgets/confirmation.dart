@@ -21,14 +21,14 @@ class Confirmation extends StatelessWidget {
         children: [
           Image.asset("assets/images/successfull.png"),
           Text(
-            "Payment Successful",
+            "pay_success".tr,
             style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w500,
             ),
           ),
           Text(
-            "Your payment has been done successfully.",
+            "pay_success_text".tr,
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey),
           ),
@@ -47,7 +47,7 @@ class Confirmation extends StatelessWidget {
                 borderRadius: BorderRadius.circular(7),
                 color: primaryColor,
               ),
-              child: Text("Continue", style: TextStyle(color: Colors.white)),
+              child: Text("continue".tr, style: TextStyle(color: Colors.white)),
             ),
           )
         ],

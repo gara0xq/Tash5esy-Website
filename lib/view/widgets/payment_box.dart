@@ -12,9 +12,9 @@ class PaymentBox extends StatelessWidget {
   final SubscriptionModel model;
 
   final List pages = [
-    "Summary",
-    "Payment",
-    "Confirmation",
+    "summary".tr,
+    "payment".tr,
+    "confirmation".tr,
   ];
 
   @override

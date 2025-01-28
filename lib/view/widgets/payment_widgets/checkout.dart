@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/controller/payment_controller.dart';
 import 'package:tash5esy_website/model/subscription_model.dart';
 import 'package:tash5esy_website/utils/colors.dart';
@@ -54,7 +55,7 @@ class Checkout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Subtotal",
+              "subtotal".tr,
               style: TextStyle(fontSize: 18),
             ),
             Text(
@@ -67,7 +68,7 @@ class Checkout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Discount",
+              "discount".tr,
               style: TextStyle(fontSize: 18),
             ),
             Text(
@@ -83,7 +84,7 @@ class Checkout extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
-              "Total",
+              "total".tr,
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -111,8 +112,8 @@ class Checkout extends StatelessWidget {
               borderRadius: BorderRadius.circular(7),
               color: foriegnColor,
             ),
-            child: const Text(
-              "Proceed",
+            child: Text(
+              "proceed".tr,
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -160,9 +161,9 @@ class Checkout extends StatelessWidget {
                         controller: controller.couponController,
                         validator: (value) =>
                             controller.validateCoupon(model, value),
-                        decoration: const InputDecoration(
+                        decoration:  InputDecoration(
                           border: InputBorder.none,
-                          hintText: "Enter coupon code",
+                          hintText: "enter_coupon".tr,
                           hintStyle: TextStyle(color: Colors.grey),
                         ),
                       ),
@@ -182,8 +183,8 @@ class Checkout extends StatelessWidget {
               color: foriegnColor,
               borderRadius: BorderRadius.circular(7),
             ),
-            child: const Text(
-              "Apply",
+            child:  Text(
+              "apply".tr,
               style: TextStyle(color: Colors.white),
             ),
           ),

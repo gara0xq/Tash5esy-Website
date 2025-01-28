@@ -37,7 +37,7 @@ class SignupScreen extends StatelessWidget {
                           children: [
                             Image.asset('assets/images/mini_logo.png'),
                             Text(
-                              "Create an account",
+                              "create_account".tr,
                               style: TextStyle(
                                 fontSize: 24,
                                 color: foriegnColor,
@@ -47,7 +47,7 @@ class SignupScreen extends StatelessWidget {
                             Row(
                               spacing: 5,
                               children: [
-                                Text("Already have an account?"),
+                                Text("already_have_account".tr),
                                 InkWell(
                                   onTap: () {
                                     Get.back();
@@ -57,7 +57,7 @@ class SignupScreen extends StatelessWidget {
                                   highlightColor: Colors.transparent,
                                   splashColor: Colors.transparent,
                                   child: Text(
-                                    "Login",
+                                    "Login".tr,
                                     style: TextStyle(
                                         color: foriegnColor, fontSize: 16),
                                   ),
@@ -69,20 +69,20 @@ class SignupScreen extends StatelessWidget {
                               children: [
                                 Expanded(
                                   child: _inputField(
-                                    "First Name",
+                                    "first_name".tr,
                                     controller: controller.firstNameController,
                                   ),
                                 ),
                                 Expanded(
                                   child: _inputField(
-                                    "Last Name",
+                                    "last_name".tr,
                                     controller: controller.lastNameController,
                                   ),
                                 ),
                               ],
                             ),
                             _inputField(
-                              "Email Address",
+                              "email".tr,
                               controller: controller.emailController,
                             ),
                             Row(
@@ -90,14 +90,14 @@ class SignupScreen extends StatelessWidget {
                               children: [
                                 Expanded(
                                   child: _inputField(
-                                    "Password",
+                                    "pass".tr,
                                     controller: controller.passwordController,
                                     obscure: !controller.showedPassword,
                                   ),
                                 ),
                                 Expanded(
                                   child: _inputField(
-                                    "Confirm Password",
+                                    "confirm_pass".tr,
                                     controller:
                                         controller.confirmPasswordController,
                                     obscure: !controller.showedPassword,
@@ -113,7 +113,7 @@ class SignupScreen extends StatelessWidget {
                                       controller.checkBox(value),
                                 ),
                                 Text(
-                                  "Show Password",
+                                  "show_pass".tr,
                                   style: TextStyle(color: Colors.grey.shade600),
                                 ),
                               ],
@@ -130,7 +130,7 @@ class SignupScreen extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(7),
                                 ),
                                 child: Text(
-                                  "Create an account",
+                                  "create_account".tr,
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 24,

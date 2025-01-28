@@ -8,34 +8,34 @@ import 'package:tash5esy_website/view/widgets/payment_box.dart';
 class SubscriptionCard extends StatelessWidget {
   SubscriptionCard({super.key, required this.model});
   final List economic = [
-    "Patient Record Management",
-    "Appointment Scheduling",
-    "Basic Analytics",
-    "Secure Storage (50 GB)",
-    "Advanced Marketing Tools",
-    "Multi-Department Support",
-    "Operation Team Support",
-    "Custom Integrations",
+    "economic_patient_record_management".tr,
+    "economic_appointment_scheduling".tr,
+    "economic_basic_analytics".tr,
+    "economic_secure_storage".tr,
+    "economic_advanced_marketing_tools".tr,
+    "economic_multi_department_support".tr,
+    "economic_operation_team_support".tr,
+    "economic_custom_integrations".tr,
   ];
   final List profissional = [
-    "Patient Record Management",
-    "Appointment Scheduling",
-    "Advanced Analytics",
-    "Secure Storage (200 GB)",
-    "Social Media Integration",
-    "Priority Technical Support",
-    "Operation Team Support",
-    "Unlimited Users",
+    "professional_patient_record_management".tr,
+    "professional_appointment_scheduling".tr,
+    "professional_advanced_analytics".tr,
+    "professional_secure_storage".tr,
+    "professional_social_media_integration".tr,
+    "professional_priority_technical_support".tr,
+    "professional_operation_team_support".tr,
+    "professional_unlimited_users".tr,
   ];
   final List enterprise = [
-    "Full Patient Record Management",
-    "Appointment Scheduling",
-    "Comprehensive Analytics",
-    "Secure Storage (1 TB)",
-    "Advanced Marketing Tools",
-    "Custom Integrations",
-    "Operation Team Support",
-    "Unlimited Users",
+    "enterprise_full_patient_record_management".tr,
+    "enterprise_appointment_scheduling".tr,
+    "enterprise_comprehensive_analytics".tr,
+    "enterprise_secure_storage".tr,
+    "enterprise_advanced_marketing_tools".tr,
+    "enterprise_custom_integrations".tr,
+    "enterprise_operation_team_support".tr,
+    "enterprise_unlimited_users".tr,
   ];
   final SubscriptionModel model;
   @override
@@ -92,7 +92,7 @@ class SubscriptionCard extends StatelessWidget {
               maxLines: 1,
             ),
             AutoSizeText(
-              "EGP / MONTH",
+              "currency".tr,
               style: TextStyle(
                 color: subColor,
                 fontSize: 12,
@@ -134,7 +134,7 @@ class SubscriptionCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(7),
                 ),
                 child: AutoSizeText(
-                  "Choose Plan",
+                  "choose_plan".tr,
                   style: TextStyle(
                     color: primaryColor,
                     fontSize: 18,

@@ -23,7 +23,7 @@ class LoginScreen extends StatelessWidget {
                     scale: 2,
                   ),
                   Text(
-                    "\"Your health, your data, under control\"",
+                    "slogan".tr,
                     style: TextStyle(
                       color: primaryColor,
                       fontSize: 30,
@@ -49,7 +49,7 @@ class LoginScreen extends StatelessWidget {
                         children: [
                           Image.asset("assets/images/mini_logo.png"),
                           Text(
-                            "Login to your Account",
+                            "login_to_account".tr,
                             style: TextStyle(
                               color: foriegnColor,
                               fontSize: 38,
@@ -57,7 +57,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "See what is going on with your business",
+                            "subslogan".tr,
                             style: TextStyle(color: Colors.grey.shade600),
                           ),
                           InkWell(
@@ -78,7 +78,7 @@ class LoginScreen extends StatelessWidget {
                                 children: [
                                   Image.asset("assets/icons/google.png"),
                                   Text(
-                                    "Continue with Google",
+                                    "continue_with_google".tr,
                                     style:
                                         TextStyle(color: Colors.grey.shade600),
                                   ),
@@ -93,7 +93,7 @@ class LoginScreen extends StatelessWidget {
                                 Spacer(),
                                 Expanded(child: Divider()),
                                 Text(
-                                  "or Sign in with Email",
+                                  "or_with_email".tr,
                                   style: TextStyle(color: Colors.grey.shade600),
                                 ),
                                 Expanded(child: Divider()),
@@ -102,7 +102,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "Email",
+                            "email".tr,
                             style: TextStyle(color: Colors.grey.shade600),
                           ),
                           TextFormField(
@@ -114,7 +114,7 @@ class LoginScreen extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            "Password",
+                            "pass".tr,
                             style: TextStyle(color: Colors.grey.shade600),
                           ),
                           TextFormField(
@@ -123,7 +123,6 @@ class LoginScreen extends StatelessWidget {
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: "********",
-                              
                               hintStyle: TextStyle(color: Colors.grey.shade300),
                             ),
                           ),
@@ -135,7 +134,7 @@ class LoginScreen extends StatelessWidget {
                                     controller.checkBox(value),
                               ),
                               Text(
-                                "Remember Me",
+                                "remmenber".tr,
                                 style: TextStyle(color: Colors.grey.shade600),
                               ),
                               Spacer(),
@@ -145,7 +144,7 @@ class LoginScreen extends StatelessWidget {
                                 highlightColor: Colors.transparent,
                                 splashColor: Colors.transparent,
                                 child: Text(
-                                  "Forget Password?",
+                                  "forget".tr,
                                   style: TextStyle(
                                       color: foriegnColor, fontSize: 18),
                                 ),
@@ -167,7 +166,7 @@ class LoginScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(7),
                               ),
                               child: Text(
-                                "Login",
+                                "Login".tr,
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 24,
@@ -181,7 +180,7 @@ class LoginScreen extends StatelessWidget {
                             spacing: 10,
                             children: [
                               Text(
-                                "Not Registered Yet?",
+                                "not_registered".tr,
                                 style: TextStyle(color: Colors.black),
                               ),
                               InkWell(
@@ -193,7 +192,7 @@ class LoginScreen extends StatelessWidget {
                                 highlightColor: Colors.transparent,
                                 splashColor: Colors.transparent,
                                 child: Text(
-                                  "Create an account",
+                                  "create_account".tr,
                                   style: TextStyle(
                                     color: foriegnColor,
                                     fontSize: 18,
