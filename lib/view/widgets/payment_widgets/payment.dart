@@ -19,18 +19,35 @@ class Payment extends StatelessWidget {
             _paymentTypeBox("apple_pay.png"),
           ],
         ),
-        
-        _textInput(Icons.person, "Name on card", null),
-        _textInput(Icons.credit_card, "Card number", null),
+        _textInput(
+          Icons.person,
+          "Name on card",
+          (value) => controller.validateName(value),
+          controller.nameOnCardController,
+        ),
+        _textInput(
+            Icons.credit_card,
+            "Card number",
+            (value) => controller.validateCardNumber(value),
+            controller.cardNumberController),
         Row(
           spacing: 10,
           children: [
             Expanded(
-              child:
-                  _textInput(Icons.calendar_month_rounded, "Expire Date", null),
+              child: _textInput(
+                Icons.calendar_month_rounded,
+                "Expire Date",
+                (value) => controller.validateExpireDate(value),
+                controller.dateExpiredController,
+              ),
             ),
             Expanded(
-              child: _textInput(Icons.lock, "CVV", null),
+              child: _textInput(
+                Icons.lock,
+                "CVV",
+                (value) => controller.validateCVV(value),
+                controller.cvvController,
+              ),
             ),
           ],
         ),
@@ -45,7 +62,7 @@ class Payment extends StatelessWidget {
               borderRadius: BorderRadius.circular(7),
               color: foriegnColor,
             ),
-            child:  Text(
+            child: Text(
               "pay_now".tr,
               style: TextStyle(
                 color: Colors.white,
@@ -79,10 +96,11 @@ class Payment extends StatelessWidget {
     );
   }
 
-  Widget _textInput(
-      IconData icon, String hint, String? Function(String?)? validator) {
+  Widget _textInput(IconData icon, String hint,
+      String? Function(String?)? validator, controller) {
     return TextFormField(
       validator: validator,
+      controller: controller,
       decoration: InputDecoration(
         suffixIcon: Icon(
           icon,

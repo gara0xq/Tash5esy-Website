@@ -69,39 +69,43 @@ class SignupScreen extends StatelessWidget {
                                 spacing: 10,
                                 children: [
                                   Expanded(
-                                    child: _inputField(
-                                      "first_name".tr,
-                                      controller:
-                                          controller.firstNameController,
-                                    ),
+                                    child: _inputField("first_name".tr,
+                                        controller:
+                                            controller.firstNameController,
+                                        validator: (value) =>
+                                            controller.validateName(value)),
                                   ),
                                   Expanded(
-                                    child: _inputField(
-                                      "last_name".tr,
-                                      controller: controller.lastNameController,
-                                    ),
+                                    child: _inputField("last_name".tr,
+                                        controller:
+                                            controller.lastNameController,
+                                        validator: (value) =>
+                                            controller.validateName(value)),
                                   ),
                                 ],
                               ),
-                              _inputField(
-                                "email".tr,
-                                controller: controller.emailController,
-                              ),
+                              _inputField("email".tr,
+                                  controller: controller.emailController,
+                                  validator: (value) =>
+                                      controller.validateEmail(value)),
                               Row(
                                 spacing: 10,
                                 children: [
                                   Expanded(
-                                    child: _inputField(
-                                      "pass".tr,
-                                      controller: controller.passwordController,
-                                      obscure: !controller.showedPassword,
-                                    ),
+                                    child: _inputField("pass".tr,
+                                        controller:
+                                            controller.passwordController,
+                                        obscure: !controller.showedPassword,
+                                        validator: (value) =>
+                                            controller.validatePassword(value)),
                                   ),
                                   Expanded(
                                     child: _inputField(
                                       "confirm_pass".tr,
                                       controller:
                                           controller.confirmPasswordController,
+                                      validator: (value) => controller
+                                          .validateConfirmPassword(value),
                                       obscure: !controller.showedPassword,
                                     ),
                                   ),
