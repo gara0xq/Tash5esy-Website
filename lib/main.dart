@@ -13,8 +13,9 @@ void main() async {
   await dotenv.load();
   await MyTranslation.loadTranslations();
   await Supabase.initialize(
-    url: dotenv.env['DATABASE_URL']!,
-    anonKey: dotenv.env['DATABASE_KEY']!,
+    url: "https://ieystdzfdycyhcgpqdzn.supabase.co",
+    anonKey:
+        "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlleXN0ZHpmZHljeWhjZ3BxZHpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzc4OTAzNTIsImV4cCI6MjA1MzQ2NjM1Mn0.bIB-bJMPxd80LdY7zwXdUF1MhyBtVHKu7phF87aSIto",
   );
 
   runApp(MyApp());
