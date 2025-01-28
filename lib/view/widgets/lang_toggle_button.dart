@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_website/controller/home_controller.dart';
+import 'package:tash5esy_website/controller/main_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class LangToggleButton extends StatelessWidget {
   const LangToggleButton({super.key, required this.controller});
-  final HomeController controller;
+  final dynamic controller;
 
   @override
   Widget build(BuildContext context) {

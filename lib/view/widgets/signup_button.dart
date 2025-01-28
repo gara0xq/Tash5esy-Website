@@ -21,7 +21,7 @@ class SignupButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Text(
-          "Sign up",
+          "Sign up".tr,
           style: TextStyle(
             fontWeight: FontWeight.w600,
             fontSize: 16,

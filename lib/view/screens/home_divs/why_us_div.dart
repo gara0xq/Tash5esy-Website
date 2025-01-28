@@ -1,44 +1,39 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class WhyUsDiv extends StatelessWidget {
   WhyUsDiv({super.key});
   final List<Map<String, String>> whyUs = [
     {
-      "title": "Comprehensive Solutions",
-      "description":
-          "Manage all your medical operations in one place, from patient records to lab results and x-rays.",
+      "title": "why_title1".tr,
+      "description": "why_text1".tr,
       "image": "assets/icons/whyus1.png",
     },
     {
-      "title": "Real-Time Connectivity",
-      "description":
-          "A dashboard for doctors and lab technicians keeps everyone connected, ensuring accurate and instant updates.",
+      "title": "why_title2".tr,
+      "description": "why_text2".tr,
       "image": "assets/icons/whyus2.png",
     },
     {
-      "title": "Data Security",
-      "description":
-          "Your data is protected with advanced encryption, ensuring patient confidentiality and trust.",
+      "title": "why_title3".tr,
+      "description": "why_text3".tr,
       "image": "assets/icons/whyus3.png",
     },
     {
-      "title": "User-Friendly Interface",
-      "description":
-          "Our platform is designed with simplicity in mind, making it easy to use for professionals and patients alike.",
+      "title": "why_title4".tr,
+      "description": "why_text4".tr,
       "image": "assets/icons/whyus4.png",
     },
     {
-      "title": "Scalability",
-      "description":
-          "Tash5esy grows with you, offering packages tailored to different operation sizes, users, and data needs.",
+      "title": "why_title5".tr,
+      "description": "why_text5".tr,
       "image": "assets/icons/whyus5.png",
     },
     {
-      "title": "Support & Training",
-      "description":
-          "We provide 24/7 support and training sessions to ensure you get the most out of Tash5esy.",
+      "title": "why_title6".tr,
+      "description": "why_text6".tr,
       "image": "assets/icons/whyus6.png",
     },
   ];
@@ -57,7 +52,7 @@ class WhyUsDiv extends StatelessWidget {
           spacing: 80,
           children: [
             Text(
-              "Why Us",
+              "Why Us".tr,
               style: TextStyle(
                 color: primaryColor,
                 fontSize: 46,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tash5esy_website/controller/home_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 import 'package:tash5esy_website/view/widgets/lang_toggle_button.dart';
 import 'package:tash5esy_website/view/widgets/login_button.dart';
@@ -9,7 +8,7 @@ import 'package:tash5esy_website/view/widgets/signup_button.dart';
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key, required this.controller});
 
-  final HomeController controller;
+  final dynamic controller;
 
   @override
   Widget build(BuildContext context) {
@@ -54,9 +53,9 @@ class CustomDrawer extends StatelessWidget {
         if (key != null) {
           controller.scrollController(key);
           Get.back();
-        }
-        else{
           
+        } else {
+          Get.toNamed("/subscription");
         }
       },
       hoverColor: foriegnColor.withAlpha(30),

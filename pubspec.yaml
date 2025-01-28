@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.6.6
   auto_size_text: ^3.0.0
+  supabase_flutter: ^2.8.3
+  flutter_dotenv: ^5.2.1
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -63,6 +66,8 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/translation/en.json
+    - assets/translation/ar.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -106,6 +106,7 @@ class LoginScreen extends StatelessWidget {
                             style: TextStyle(color: Colors.grey.shade600),
                           ),
                           TextFormField(
+                            controller: controller.emailController,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: "mail@abc.com",
@@ -117,9 +118,12 @@ class LoginScreen extends StatelessWidget {
                             style: TextStyle(color: Colors.grey.shade600),
                           ),
                           TextFormField(
+                            controller: controller.passwordController,
+                            obscureText: true,
                             decoration: InputDecoration(
                               border: OutlineInputBorder(),
                               hintText: "********",
+                              
                               hintStyle: TextStyle(color: Colors.grey.shade300),
                             ),
                           ),
@@ -150,7 +154,7 @@ class LoginScreen extends StatelessWidget {
                           ),
                           InkWell(
                             onTap: () {
-                              Get.offAllNamed('/');
+                              controller.login();
                             },
                             hoverColor: Colors.transparent,
                             highlightColor: Colors.transparent,

@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class OurServiceDiv extends StatelessWidget {
   OurServiceDiv({super.key});
   final List<Map<String, String>> ourServices = [
     {
-      "title": "Comprehensive Medical Records",
+      "title": "service1".tr,
       "image": "assets/images/service1.png",
     },
     {
-      "title": "Integrated Lab Results",
+      "title": "service2".tr,
       "image": "assets/images/service2.png",
     },
     {
-      "title": "Seamless Appointment Scheduling",
+      "title": "service3".tr,
       "image": "assets/images/service3.png",
     },
     {
-      "title": "Easy Payment Solutions",
+      "title": "service4".tr,
       "image": "assets/images/service4.png",
     },
   ];
@@ -33,7 +34,7 @@ class OurServiceDiv extends StatelessWidget {
         spacing: 80,
         children: [
           Text(
-            "Our Services",
+            "Our Services".tr,
             style: TextStyle(
               color: primaryColor,
               fontSize: 46,

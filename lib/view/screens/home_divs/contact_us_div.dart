@@ -1,11 +1,11 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:tash5esy_website/controller/home_controller.dart';
+import 'package:tash5esy_website/controller/main_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class ContactUsDiv extends StatelessWidget {
   const ContactUsDiv({super.key, required this.controller});
-  final HomeController controller;
+  final MainController controller;
 
   @override
   Widget build(BuildContext context) {

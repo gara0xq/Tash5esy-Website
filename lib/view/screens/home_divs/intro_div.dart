@@ -1,11 +1,12 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
-import 'package:tash5esy_website/controller/home_controller.dart';
+import 'package:get/get.dart';
+import 'package:tash5esy_website/controller/main_controller.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class IntroDiv extends StatelessWidget {
   IntroDiv({super.key, required this.controller});
-  final HomeController controller;
+  final MainController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +34,7 @@ class IntroDiv extends StatelessWidget {
                 ),
               ),
               child: AutoSizeText(
-                "Empowering care through connectivity",
+                "headline".tr,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 70,
@@ -46,7 +47,7 @@ class IntroDiv extends StatelessWidget {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: width / 20),
             child: AutoSizeText(
-              "Our software suite seamlessly connects and digitizes the healthcare transportation ecosystem.",
+              "sub_headline".tr,
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey.shade700,
@@ -74,7 +75,7 @@ class IntroDiv extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Text(
-                "Get Started",
+                "Get Started".tr,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,

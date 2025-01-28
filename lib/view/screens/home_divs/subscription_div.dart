@@ -1,44 +1,40 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class SubscriptionDiv extends StatelessWidget {
   SubscriptionDiv({super.key});
   final List<Map<String, String>> subscription = [
     {
-      "title": "No Upfront Cost",
-      "description":
-          "Start using Tash5esy without heavy investments. Pay only for what you use.",
-      "image": "assets/icons/whyus1.png",
+      "title": "sub_title1".tr,
+      "description": "sub_text1".tr,
+      "image": "assets/images/sub1.png",
     },
     {
-      "title": "Comprehensive Access",
-      "description": "Enjoy access to our full suite of features.",
-      "image": "assets/icons/whyus2.png",
+      "title": "sub_title2".tr,
+      "description": "sub_text2".tr,
+      "image": "assets/images/sub2.png",
     },
     {
-      "title": "Tailored to Your Needs",
-      "description":
-          "Choose from a range of packages designed for different operations, user numbers, and data requirements.",
-      "image": "assets/icons/whyus3.png",
+      "title": "sub_title3".tr,
+      "description": "sub_text3".tr,
+      "image": "assets/images/sub3.png",
     },
     {
-      "title": "Affordable Pricing",
-      "description":
-          "Transparent and competitive subscription plans designed to suit every budget.",
-      "image": "assets/icons/whyus4.png",
+      "title": "sub_title4".tr,
+      "description": "sub_text4".tr,
+      "image": "assets/images/sub4.png",
     },
     {
-      "title": "Effortless Scalability",
-      "description":
-          "Upgrade or downgrade your subscription anytime as your organization grows or changes.",
-      "image": "assets/icons/whyus5.png",
+      "title": "sub_title5".tr,
+      "description": "sub_text5".tr,
+      "image": "assets/images/sub5.png",
     },
     {
-      "title": "Continuous Support",
-      "description":
-          "Stay worry-free with 24/7 technical support and regular updates to keep your system running smoothly.",
-      "image": "assets/icons/whyus6.png",
+      "title": "sub_title6".tr,
+      "description": "sub_text6".tr,
+      "image": "assets/images/sub6.png",
     },
   ];
   @override
@@ -60,7 +56,7 @@ class SubscriptionDiv extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     AutoSizeText(
-                      "Get Tash5esy by Subscription",
+                      "subscription_title".tr,
                       style: TextStyle(
                         color: primaryColor,
                         fontSize: 46,
@@ -69,7 +65,7 @@ class SubscriptionDiv extends StatelessWidget {
                       maxLines: 2,
                     ),
                     AutoSizeText(
-                      "Simplify healthcare management with our flexible subscription model!",
+                      "subscription_subtitle".tr,
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w400,

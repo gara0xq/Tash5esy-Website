@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 
 class HomeDiv extends StatelessWidget {
@@ -21,7 +22,7 @@ class HomeDiv extends StatelessWidget {
               spacing: 20,
               children: [
                 AutoSizeText(
-                  "Your Comprehensive Health Record Partner",
+                  "home_title".tr,
                   style: TextStyle(
                     color: primaryColor,
                     fontSize: 46,
@@ -30,11 +31,11 @@ class HomeDiv extends StatelessWidget {
                   maxLines: 2,
                 ),
                 Text(
-                  "Tash5esy is a cutting-edge electronic health record (EHR) system designed to revolutionize healthcare management. With seamless integration for hospitals, doctors, and laboratory technicians, Tash5esy streamlines operations by offering a centralized platform for managing patient data, lab results, and X-rays.",
+                  "home_text1".tr,
                   style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
                 ),
                 Text(
-                  "Our system empowers healthcare providers with real-time access to vital information, enhancing decision-making and improving patient care. Whether you are a small clinic or a large hospital, Tash5esy provides scalable solutions tailored to your needs.",
+                  "home_text2".tr,
                   style: TextStyle(color: Colors.grey.shade600, fontSize: 18),
                 ),
               ],

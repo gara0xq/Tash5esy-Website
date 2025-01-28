@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:tash5esy_website/controller/home_controller.dart';
+import 'package:get/get.dart';
 import 'package:tash5esy_website/utils/colors.dart';
 import 'package:tash5esy_website/view/widgets/lang_toggle_button.dart';
 import 'package:tash5esy_website/view/widgets/login_button.dart';
 import 'package:tash5esy_website/view/widgets/signup_button.dart';
 
 class CustomAppBar extends StatelessWidget {
-  final HomeController controller;
-  const CustomAppBar({super.key, required this.controller});
+  final dynamic controller;
+  final bool inPricing;
+  const CustomAppBar({
+    super.key,
+    required this.controller,
+    this.inPricing = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -29,17 +34,87 @@ class CustomAppBar extends StatelessWidget {
             ),
           ),
           Spacer(),
-          if (width > 800) _customTap(title: "Home", key: controller.homeKey),
+          if (width > 800) _customTap(title: "Home".tr, key: controller.homeKey),
           if (width > 800)
-            _customTap(title: "Our Services", key: controller.ourServiceKey),
-          if (width > 800) _customTap(title: "Pricing"),
+            _customTap(title: "Our Services".tr, key: controller.ourServiceKey),
+          if (width > 800) _customTap(title: "Pricing".tr),
           if (width > 800)
-            _customTap(title: "About Us", key: controller.aboutUsKey),
+            _customTap(title: "About Us".tr, key: controller.aboutUsKey),
           if (width > 800)
-            _customTap(title: "Contact Us", key: controller.contactUsKey),
+            _customTap(title: "Contact Us".tr, key: controller.contactUsKey),
           if (width > 800) Spacer(),
-          if (width > 1150) SignupButton(),
-          if (width > 1150) LoginButton(),
+          if (width > 1150 && controller.username == null) SignupButton(),
+          if (width > 1150 && controller.username == null) LoginButton(),
+          if (controller.username != null)
+            InkWell(
+              onTap: () {
+                Get.dialog(Dialog(
+                  child: Container(
+                    height: 200,
+                    padding: EdgeInsets.all(30),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      spacing: 30,
+                      children: [
+                        Text(
+                          "Do you want to logout?",
+                          style: TextStyle(
+                              fontSize: 30,
+                              color: primaryColor,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            controller.logout();
+                          },
+                          child: Container(
+                            width: 150,
+                            height: 40,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(7),
+                              color: Colors.red,
+                            ),
+                            child: Text(
+                              "Logout",
+                              style: TextStyle(
+                                  fontSize: 24,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ));
+              },
+              child: Container(
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(7),
+                  border: Border.all(color: foriegnColor, width: 2),
+                ),
+                child: Row(
+                  spacing: 10,
+                  children: [
+                    Text(
+                      controller.username,
+                      style: TextStyle(
+                        color: foriegnColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+                    Icon(Icons.person, color: foriegnColor),
+                  ],
+                ),
+              ),
+            ),
           if (width > 1150) LangToggleButton(controller: controller),
         ],
       ),
@@ -52,8 +127,9 @@ class CustomAppBar extends StatelessWidget {
   }) {
     return InkWell(
       onTap: () {
-        if (key != null) controller.scrollController(key);
+        controller.scrollController(key);
       },
+      borderRadius: BorderRadius.circular(7),
       hoverColor: foriegnColor.withAlpha(30),
       child: Container(
         height: 40,
