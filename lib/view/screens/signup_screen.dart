@@ -30,116 +30,120 @@ class SignupScreen extends StatelessWidget {
                       flex: 3,
                       child: Form(
                         key: controller.formKey,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 15,
-                          children: [
-                            Image.asset('assets/images/mini_logo.png'),
-                            Text(
-                              "create_account".tr,
-                              style: TextStyle(
-                                fontSize: 24,
-                                color: foriegnColor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Row(
-                              spacing: 5,
-                              children: [
-                                Text("already_have_account".tr),
-                                InkWell(
-                                  onTap: () {
-                                    Get.back();
-                                    Get.toNamed('/login');
-                                  },
-                                  hoverColor: Colors.transparent,
-                                  highlightColor: Colors.transparent,
-                                  splashColor: Colors.transparent,
-                                  child: Text(
-                                    "Login".tr,
-                                    style: TextStyle(
-                                        color: foriegnColor, fontSize: 16),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              spacing: 10,
-                              children: [
-                                Expanded(
-                                  child: _inputField(
-                                    "first_name".tr,
-                                    controller: controller.firstNameController,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: _inputField(
-                                    "last_name".tr,
-                                    controller: controller.lastNameController,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            _inputField(
-                              "email".tr,
-                              controller: controller.emailController,
-                            ),
-                            Row(
-                              spacing: 10,
-                              children: [
-                                Expanded(
-                                  child: _inputField(
-                                    "pass".tr,
-                                    controller: controller.passwordController,
-                                    obscure: !controller.showedPassword,
-                                  ),
-                                ),
-                                Expanded(
-                                  child: _inputField(
-                                    "confirm_pass".tr,
-                                    controller:
-                                        controller.confirmPasswordController,
-                                    obscure: !controller.showedPassword,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Row(
-                              children: [
-                                Checkbox(
-                                  value: controller.showedPassword,
-                                  onChanged: (value) =>
-                                      controller.checkBox(value),
-                                ),
-                                Text(
-                                  "show_pass".tr,
-                                  style: TextStyle(color: Colors.grey.shade600),
-                                ),
-                              ],
-                            ),
-                            TextButton(
-                              onPressed: () {
-                                controller.signup();
-                              },
-                              child: Container(
-                                height: 50,
-                                alignment: Alignment.center,
-                                decoration: BoxDecoration(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            spacing: 15,
+                            children: [
+                              Image.asset('assets/images/mini_logo.png'),
+                              Text(
+                                "create_account".tr,
+                                style: TextStyle(
+                                  fontSize: 24,
                                   color: foriegnColor,
-                                  borderRadius: BorderRadius.circular(7),
+                                  fontWeight: FontWeight.bold,
                                 ),
-                                child: Text(
-                                  "create_account".tr,
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24,
-                                    fontWeight: FontWeight.w800,
+                              ),
+                              Row(
+                                spacing: 5,
+                                children: [
+                                  Text("already_have_account".tr),
+                                  InkWell(
+                                    onTap: () {
+                                      Get.back();
+                                      Get.toNamed('/login');
+                                    },
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    splashColor: Colors.transparent,
+                                    child: Text(
+                                      "Login".tr,
+                                      style: TextStyle(
+                                          color: foriegnColor, fontSize: 16),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                spacing: 10,
+                                children: [
+                                  Expanded(
+                                    child: _inputField(
+                                      "first_name".tr,
+                                      controller:
+                                          controller.firstNameController,
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: _inputField(
+                                      "last_name".tr,
+                                      controller: controller.lastNameController,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              _inputField(
+                                "email".tr,
+                                controller: controller.emailController,
+                              ),
+                              Row(
+                                spacing: 10,
+                                children: [
+                                  Expanded(
+                                    child: _inputField(
+                                      "pass".tr,
+                                      controller: controller.passwordController,
+                                      obscure: !controller.showedPassword,
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: _inputField(
+                                      "confirm_pass".tr,
+                                      controller:
+                                          controller.confirmPasswordController,
+                                      obscure: !controller.showedPassword,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Checkbox(
+                                    value: controller.showedPassword,
+                                    onChanged: (value) =>
+                                        controller.checkBox(value),
+                                  ),
+                                  Text(
+                                    "show_pass".tr,
+                                    style:
+                                        TextStyle(color: Colors.grey.shade600),
+                                  ),
+                                ],
+                              ),
+                              TextButton(
+                                onPressed: () {
+                                  controller.signup();
+                                },
+                                child: Container(
+                                  height: 50,
+                                  alignment: Alignment.center,
+                                  decoration: BoxDecoration(
+                                    color: foriegnColor,
+                                    borderRadius: BorderRadius.circular(7),
+                                  ),
+                                  child: Text(
+                                    "create_account".tr,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w800,
+                                    ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     );
