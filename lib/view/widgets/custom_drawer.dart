@@ -31,11 +31,11 @@ class CustomDrawer extends StatelessWidget {
         spacing: 20,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _customTap(title: "Home", key: controller.homeKey),
-          _customTap(title: "Our Services", key: controller.ourServiceKey),
-          _customTap(title: "Pricing"),
-          _customTap(title: "About Us", key: controller.aboutUsKey),
-          _customTap(title: "Contact Us", key: controller.contactUsKey),
+          _customTap(title: "Home".tr, key: controller.homeKey),
+          _customTap(title: "Our Services".tr, key: controller.ourServiceKey),
+          _customTap(title: "Pricing".tr),
+          _customTap(title: "About Us".tr, key: controller.aboutUsKey),
+          _customTap(title: "Contact Us".tr, key: controller.contactUsKey),
           SignupButton(),
           LoginButton(),
           LangToggleButton(controller: controller),
@@ -53,7 +53,6 @@ class CustomDrawer extends StatelessWidget {
         if (key != null) {
           controller.scrollController(key);
           Get.back();
-          
         } else {
           Get.toNamed("/subscription");
         }
