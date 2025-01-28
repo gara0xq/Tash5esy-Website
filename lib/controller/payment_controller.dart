@@ -34,7 +34,11 @@ class PaymentController extends GetxController {
   }
 
   continuePayment(value) {
-    currentIndex = value;
+    if (value == 2) {
+      if (formKey.currentState!.validate()) {
+        currentIndex = value;
+      }
+    }
     update();
   }
 
