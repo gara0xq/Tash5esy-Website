@@ -9,7 +9,6 @@ import 'package:tash5esy_website/view/screens/subscription_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   await MyTranslation.loadTranslations();
   await Supabase.initialize(
     url: "https://ieystdzfdycyhcgpqdzn.supabase.co",
